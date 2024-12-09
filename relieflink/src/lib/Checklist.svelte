@@ -1,7 +1,5 @@
 <script>
   export let items = [];
-  export let name = "";
-  export let subheading = "";
   let checkedItems = new Set();
 
   function toggleItem(item) {
@@ -14,9 +12,6 @@
 </script>
 
 <div class="checklist">
-  <br />
-  <h2>{name}</h2>
-  <p>{subheading}</p>
   <ul>
     {#each items as item}
       <li>
@@ -36,11 +31,6 @@
 </div>
 
 <style>
-  .checklist {
-    margin: 20px;
-    text-align: center;
-  }
-
   .checklist ul {
     list-style: none;
     padding: 0;

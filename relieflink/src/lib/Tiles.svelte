@@ -23,10 +23,9 @@
 
 <style>
   .tiles-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
-    padding: 1rem;
   }
 
   .tile {
